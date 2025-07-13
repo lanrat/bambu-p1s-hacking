@@ -19,3 +19,15 @@ The entropy for the dumped firmware can be found in [flash_entropy.png](./flash_
 From here you can see the offsets from the various partitions on the flash.
 
 ![flash_entropy.png](./flash_entropy.png)
+
+## PCB Traces
+
+I have started the process of tracing out important signals such as UART on the PCB. A preview can be found in [pcb_traces_wip.png](pcb_traces_wip.png).
+
+The more detailed version is in [pcb.xcf.gz](pcb.xcf.gz).
+
+So far it seems that the unused connector directly behind the ESP32 is for UART. It has UART0 RX/TX/Gnd, and some other TBD connectors.
+
+Next is to find the right pins and voltage to externally power this board and watch for UART messages.
+
+![PCB Traces](pcb_traces_wip.png)
